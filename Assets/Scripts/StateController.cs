@@ -49,13 +49,12 @@ public class StateController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        if(col.gameObject.CompareTag("Hin"))
         collisionThisFrame = true;
-        
     }
 
     private void FixedUpdate()
     {
         collisionThisFrame = false;
-        
     }
 }
