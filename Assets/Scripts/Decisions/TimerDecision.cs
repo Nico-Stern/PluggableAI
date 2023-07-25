@@ -9,6 +9,7 @@ public class TimerDecision : Decision
     
     public override bool Decide(StateController controller)
     {
+        controller.rb.velocity = new Vector2(0,0);
         return controller.currentTimer >= timerThreshold;
     }
 }
